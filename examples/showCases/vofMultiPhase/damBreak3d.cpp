@@ -236,8 +236,8 @@ int main(int argc, char **argv)
 #ifndef PLB_REGRESSION
     pcout << "Time spent for setting up lattices: " << global::timer("initialization").stop()
           << std::endl;
-#endif
     T lastIterationTime = T();
+#endif
 
     for (plint iT = 0; iT <= maxIter; ++iT) {
         global::timer("iteration").restart();
@@ -274,6 +274,9 @@ int main(int argc, char **argv)
         fields.lattice.evaluateStatistics();
         fields.lattice.incrementTime();
 
-        lastIterationTime = global::timer("iteration").stop();
+#ifndef PLB_REGRESSION
+        lastIterationTime =
+#endif
+            global::timer("iteration").stop();
     }
 }

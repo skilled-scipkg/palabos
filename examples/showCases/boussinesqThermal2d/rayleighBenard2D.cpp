@@ -301,8 +301,8 @@ int main(int argc, char *argv[])
             parameters.getDeltaTemperature(), forceOrientation),
         nsLattice.getBoundingBox(), nsLattice, adLattice, processorLevel);
 
-    T tIni = global::timer("simTime").stop();
 #ifndef PLB_REGRESSION
+    T tIni = global::timer("simTime").stop();
     pcout << "time elapsed for rayleighBenardSetup:" << tIni << endl;
 #endif
     global::timer("simTime").start();

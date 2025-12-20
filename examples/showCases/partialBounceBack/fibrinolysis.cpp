@@ -257,8 +257,6 @@ int main(int argc, char *argv[])
 
     // pre-computation for inlet/outlet
     Array<T, 3> velInlet, velOutlet;
-    T rhoInlet = 1.;
-    T rhoOutlet = 1.;
     Array<T, 3> inletCenter, outletCenter;
     T radiusIn;
 

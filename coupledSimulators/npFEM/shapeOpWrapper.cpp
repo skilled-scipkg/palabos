@@ -192,7 +192,7 @@ void setConstraintsFromCSV(ShapeOp_Solver &s, std::string filename)
         // read details of the constraint
         std::string constraintType;
         std::vector<int> idI;
-        plb::npfem::Scalar weight;
+        plb::npfem::Scalar weight(0);
         std::vector<plb::npfem::Scalar> scalars;
 
         std::istringstream ss(line);

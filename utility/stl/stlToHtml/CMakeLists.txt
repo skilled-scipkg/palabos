@@ -16,6 +16,9 @@ if(ENABLE_MPI)
     target_link_libraries(${PROJECT_NAME} ${MPI_CXX_LIBRARIES})
 endif()
 
+find_package(TBB REQUIRED)
+target_link_libraries(${PROJECT_NAME} TBB::tbb)
+
 ###############################################################################
 
 # This returns when you compile Palabos and all the examples (root CMakeLists.txt)
@@ -67,6 +70,7 @@ if(ENABLE_MPI)
     if(MPI_CXX_FOUND)
         #set(CMAKE_CXX_COMPILER "${MPI_CXX_COMPILER}")
         include_directories(${MPI_CXX_INCLUDE_PATH})
+        set(MPI_CXX_COMPILE_FLAGS "${MPI_CXX_COMPILE_FLAGS} -DOMPI_SKIP_MPICXX")
         set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${MPI_CXX_COMPILE_FLAGS}")
         add_definitions(-DPLB_MPI_PARALLEL)
     endif()
@@ -113,3 +117,6 @@ target_link_libraries(${EXECUTABLE_NAME} palabos)
 if(ENABLE_MPI)
     target_link_libraries(${EXECUTABLE_NAME} ${MPI_CXX_LIBRARIES})
 endif()
+
+find_package(TBB REQUIRED)
+target_link_libraries(${EXECUTABLE_NAME} TBB::tbb)

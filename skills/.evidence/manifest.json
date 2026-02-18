@@ -1,0 +1,17 @@
+{
+  "core_skills": [
+    "palabos-examples-and-tutorials",
+    "palabos-parallel-hpc",
+    "palabos-simulation-workflows",
+    "palabos-getting-started",
+    "palabos-developer-guide"
+  ],
+  "evidence_dir": "skills/.evidence",
+  "files": [
+    "skills/.evidence/palabos-examples-and-tutorials.md",
+    "skills/.evidence/palabos-parallel-hpc.md",
+    "skills/.evidence/palabos-simulation-workflows.md",
+    "skills/.evidence/palabos-getting-started.md",
+    "skills/.evidence/palabos-developer-guide.md"
+  ]
+}

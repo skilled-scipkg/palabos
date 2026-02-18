@@ -1,0 +1,97 @@
+{
+  "compiled_package_id": "palabos",
+  "evidence": {
+    "core_skills": [
+      "palabos-examples-and-tutorials",
+      "palabos-parallel-hpc",
+      "palabos-simulation-workflows",
+      "palabos-getting-started",
+      "palabos-developer-guide"
+    ],
+    "evidence_dir": "skills/.evidence",
+    "files": [
+      "skills/.evidence/palabos-examples-and-tutorials.md",
+      "skills/.evidence/palabos-parallel-hpc.md",
+      "skills/.evidence/palabos-simulation-workflows.md",
+      "skills/.evidence/palabos-getting-started.md",
+      "skills/.evidence/palabos-developer-guide.md"
+    ]
+  },
+  "generation": {
+    "docs_only": false,
+    "generator_script": "sci-skills-generator/scripts/generate_skills_folder.py",
+    "max_skills": 30,
+    "return_code": 0,
+    "status": "ok"
+  },
+  "passes": [
+    {
+      "pass": 1,
+      "return_code": 0,
+      "status": "ok"
+    },
+    {
+      "pass": 2,
+      "return_code": 0,
+      "status": "ok"
+    },
+    {
+      "pass": 3,
+      "return_code": 0,
+      "status": "ok"
+    }
+  ],
+  "profile": {
+    "docs_dirs": [
+      "dco",
+      "examples",
+      "coupledSimulators/npFEM/npFEM_StandAlone_RhinoGH"
+    ],
+    "docs_only": false,
+    "notes": [
+      "Top-level docs files exist at README.md, CONTRIBUTING.md, and CHANGELOG.md (repo root).",
+      "No standalone top-level tests directory; tests are nested under examples/**/test.",
+      "Vendored third-party code under externalLibraries is excluded from source_dirs."
+    ],
+    "package_name": "palabos",
+    "profile_path": "skills/.compile_profile.json",
+    "profile_source": "file",
+    "source_dirs": [
+      "src",
+      "coupledSimulators",
+      "utility"
+    ],
+    "test_dirs": [
+      "examples/codesByTopic",
+      "examples/showCases"
+    ],
+    "tutorial_dirs": [
+      "examples/tutorial",
+      "examples/showCases",
+      "examples/codesByTopic",
+      "examples/gpuExamples",
+      "examples/benchmarks"
+    ],
+    "warnings": []
+  },
+  "project_root": "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/palabos-palabos",
+  "validation": {
+    "core_skills_checked": [
+      "palabos-parallel-hpc",
+      "palabos-examples-and-tutorials",
+      "palabos-simulation-workflows",
+      "palabos-getting-started",
+      "palabos-developer-guide"
+    ],
+    "docs_only": false,
+    "errors": [],
+    "index_skills": [
+      "palabos-index"
+    ],
+    "ok": true,
+    "skills_total": 6,
+    "source_links_total": 57,
+    "topic_skills": 5,
+    "warnings": []
+  }
+}
